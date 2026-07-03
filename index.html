@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaloyan Sabchev — Senior Software Engineer</title>
+    <meta
+      name="description"
+      content="Senior Software Engineer in Sofia, Bulgaria. React, TypeScript and distributed systems — 8+ years building enterprise platforms for aviation, cloud automation and regulatory reporting."
+    />
+    <meta property="og:title" content="Kaloyan Sabchev — Senior Software Engineer" />
+    <meta
+      property="og:description"
+      content="React • TypeScript • Distributed Systems. 8+ years of enterprise platform engineering."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/Kaloyan.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Apply theme before first paint to avoid a flash of the wrong theme.
+      const stored = localStorage.getItem('theme')
+      const light = stored === 'light' || (!stored && window.matchMedia('(prefers-color-scheme: light)').matches)
+      if (light) document.documentElement.classList.remove('dark')
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
