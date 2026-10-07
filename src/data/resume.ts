@@ -116,22 +116,33 @@ export const experience: ExperienceEntry[] = [
   },
 ]
 
-export const featuredProject: Project = {
-  title: 'Dota 2 Draft Analyzer',
-  description:
-    'A full-stack drafting assistant for Dota 2 that goes beyond hero picking: it analyzes both teams in real time, ranks ban threats, predicts lane outcomes, recommends counter-items, and estimates win probability with a model trained on professional match data.',
-  highlights: [
-    'React + TypeScript + Redux Toolkit frontend with a live three-column drafting interface',
-    'Node.js/Express backend ingesting professional match data from the OpenDota API into SQLite',
-    'Logistic-regression win-probability model with cross-validation and temperature calibration — measurably outperforms the hand-crafted heuristic it replaced',
-    'Mechanics-based item recommendation engine (counter-items derived from hero reliances and vulnerabilities, not hard-coded pairs)',
-    'Backtesting pipeline and 58 backend tests validating the scoring and model layers',
-  ],
-  image: '/images/dota-draft-analyzer.png',
-  liveUrl: 'https://dota-app1.vercel.app/',
-  githubUrl: 'https://github.com/kSabchev',
-  stack: ['React', 'TypeScript', 'Redux Toolkit', 'Node.js', 'Express', 'SQLite', 'OpenDota API', 'Logistic Regression'],
-}
+export const selectedProjects: Project[] = [
+  {
+    title: 'Dota 2 Draft Analyzer',
+    description:
+      'A full-stack drafting assistant for Dota 2 that goes beyond hero picking: it analyzes both teams in real time, ranks ban threats, predicts lane outcomes, recommends counter-items, and estimates win probability with a model trained on professional match data.',
+    highlights: [
+      'React + TypeScript + Redux Toolkit frontend with a live three-column drafting interface',
+      'Node.js/Express backend ingesting professional match data from the OpenDota API into SQLite',
+      'Logistic-regression win-probability model with cross-validation and temperature calibration — measurably outperforms the hand-crafted heuristic it replaced',
+      'Mechanics-based item recommendation engine (counter-items derived from hero reliances and vulnerabilities, not hard-coded pairs)',
+      'Backtesting pipeline and 58 backend tests validating the scoring and model layers',
+    ],
+    image: '/images/dota-draft-analyzer.png',
+    liveUrl: 'https://dota-app1.vercel.app/',
+    githubUrl: 'https://github.com/kSabchev',
+    stack: ['React', 'TypeScript', 'Redux Toolkit', 'Node.js', 'Express', 'SQLite', 'OpenDota API', 'Logistic Regression'],
+  },
+  {
+    title: 'Phone Repair CRM',
+    description:
+      'A self-hosted repair-ticket system for a phone repair shop. Staff can register devices, search and update repair tickets, and print customer and service copies. The interface is in Bulgarian.',
+    image: '/images/phone-repair-crm.png',
+    liveUrl: 'https://crazyphone-demo.onrender.com/',
+    githubUrl: 'https://github.com/kSabchev/crazyPhoneCRM',
+    stack: ['Node.js', 'Express', 'SQLite', 'JavaScript'],
+  },
+]
 
 export const prototypes: Project[] = [
   {
