@@ -196,6 +196,10 @@ export const skillGroups: SkillGroup[] = [
     label: 'Tools & Practices',
     skills: ['Git', 'Jenkins', 'Agile/Scrum', 'Code Reviews', 'Deployment Automation'],
   },
+  {
+    label: 'AI Harnesses',
+    skills: ['Claude', 'ChatGPT'],
+  },
 ]
 
 export const leadership: LeadershipItem[] = [
